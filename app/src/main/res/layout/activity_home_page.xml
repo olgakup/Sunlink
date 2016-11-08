@@ -28,7 +28,7 @@
         android:orientation="horizontal"
         android:layout_weight="5"
         android:weightSum="100"
-        android:background="@color/colorPrimaryLight2">
+        android:background="@color/colorPrimaryLight1">
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -38,7 +38,7 @@
             android:text="Profile"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
             style="@style/Widget.AppCompat.Button.Colored"
-            android:backgroundTint="@color/colorPrimaryLight2" />
+            android:backgroundTint="@color/colorPrimaryLight1" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -47,7 +47,7 @@
             android:background="@drawable/border"
             android:text="Search"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-            android:backgroundTint="@color/colorPrimaryLight1" />
+            android:backgroundTint="@color/colorPrimaryLight" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -57,7 +57,7 @@
             style="@style/Widget.AppCompat.Button"
             android:text="My Career Center"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-            android:backgroundTint="@color/colorPrimaryLight2" />
+            android:backgroundTint="@color/colorPrimaryLight1" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -66,7 +66,7 @@
             android:background="@drawable/border"
             android:text="Resources"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-            android:backgroundTint="@color/colorPrimaryLight1" />
+            android:backgroundTint="@color/colorPrimaryLight" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -75,14 +75,14 @@
             android:background="@drawable/border"
             android:text="Settings"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-            android:backgroundTint="@color/colorPrimaryLight2" />
+            android:backgroundTint="@color/colorPrimaryLight1" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="35"
         android:orientation="horizontal"
-        android:background="@color/colorPrimaryLight2">
+        android:background="@color/colorPrimaryLight1">
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="45"
-        android:background="@color/colorPrimaryLight2">
+        android:background="@color/colorPrimaryLight1">
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
