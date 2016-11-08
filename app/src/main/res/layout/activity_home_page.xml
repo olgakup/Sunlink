@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="15"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" />
+        <android.support.v4.widget.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="5"
+        android:weightSum="100"
+        android:background="@color/colorPrimaryLight2">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Profile_button"
+            android:layout_weight="20"
+            android:background="@drawable/border"
+            android:text="Profile"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:backgroundTint="@color/colorPrimaryLight2" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Search_Button"
+            android:layout_weight="20"
+            android:background="@drawable/border"
+            android:text="Search"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:backgroundTint="@color/colorPrimaryLight1" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/My_Career_Center_Button"
+            android:layout_weight="20"
+            android:background="@drawable/border"
+            style="@style/Widget.AppCompat.Button"
+            android:text="My Career Center"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:backgroundTint="@color/colorPrimaryLight2" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Resources_Button"
+            android:layout_weight="20"
+            android:background="@drawable/border"
+            android:text="Resources"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:backgroundTint="@color/colorPrimaryLight1" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Settings_Button"
+            android:layout_weight="20"
+            android:background="@drawable/border"
+            android:text="Settings"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:backgroundTint="@color/colorPrimaryLight2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="35"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryLight2">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Upcoming Events"
+            style="@style/HomePageMenyBar"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="45"
+        android:background="@color/colorPrimaryLight2">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Latests Job Posts"
+            style="@style/HomePageMenyBar"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
