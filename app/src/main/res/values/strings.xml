@@ -12,5 +12,9 @@
     <string name="signup_facebook">Sign up with Facebook account</string>
     <string name="or">OR</string>
     <string name="invalid_userPass">Username or Password is incorrect, try again.</string>
-
+    <string name="profile_hp">Profile</string>
+    <string name="search_hp">Search</string>
+    <string name="my_career_center_hp">My Career Center</string>
+    <string name="resources_hp">Resources</string>
+    <string name="settings_hp">Settings</string>
 </resources>
