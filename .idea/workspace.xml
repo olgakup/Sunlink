@@ -12,7 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="927abba8-a724-4b0c-a419-b847de5c6e5d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Sunlink.iws" />
@@ -51,7 +50,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1478821697982" expanded="true" signature="3426:3434" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,9 +95,25 @@
       <file leaf-file-name="activity_signin.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_signin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-              <folding />
+            <state relative-caret-position="305">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding>
+                <element signature="e#254#287#0" expanded="true" />
+                <element signature="e#312#347#0" expanded="true" />
+                <element signature="e#373#408#0" expanded="true" />
+                <element signature="e#432#465#0" expanded="true" />
+                <element signature="e#905#927#0" expanded="true" />
+                <element signature="e#1458#1470#0" expanded="true" />
+                <element signature="e#2359#2383#0" expanded="true" />
+                <element signature="e#2913#2925#0" expanded="true" />
+                <element signature="e#3817#3841#0" expanded="true" />
+                <element signature="e#3871#3888#0" expanded="true" />
+                <element signature="e#4378#4399#0" expanded="true" />
+                <element signature="e#4429#4446#0" expanded="true" />
+                <element signature="e#4727#4751#0" expanded="true" />
+                <element signature="e#4781#4798#0" expanded="true" />
+                <element signature="e#5031#5046#0" expanded="true" />
+              </folding>
             </state>
           </provider>
           <provider editor-type-id="android-designer2">
@@ -1926,7 +1943,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1936,7 +1953,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1950,7 +1967,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -2282,6 +2299,35 @@
       <option name="presentableId" value="Default" />
       <updated>1478280618124</updated>
     </task>
+    <task id="LOCAL-00001" summary="sign up">
+      <created>1478820255001</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1478820255001</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed error">
+      <created>1478820504097</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1478820504097</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed error">
+      <created>1478821489266</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1478821489266</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixed error">
+      <created>1478821570416</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1478821570416</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2367,6 +2413,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sign up" />
+    <MESSAGE value="fixed error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed error" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="2" />
@@ -2378,7 +2429,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1478821697982" expanded="true" signature="3426:3434" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2412,7 +2465,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="e#254#287#0" expanded="true" />
+            <element signature="e#312#347#0" expanded="true" />
+            <element signature="e#373#408#0" expanded="true" />
+            <element signature="e#432#465#0" expanded="true" />
+            <element signature="e#905#927#0" expanded="true" />
+            <element signature="e#1458#1470#0" expanded="true" />
+            <element signature="e#2359#2383#0" expanded="true" />
+            <element signature="e#2913#2925#0" expanded="true" />
+            <element signature="e#3817#3841#0" expanded="true" />
+            <element signature="e#3871#3888#0" expanded="true" />
+            <element signature="e#4378#4399#0" expanded="true" />
+            <element signature="e#4429#4446#0" expanded="true" />
+            <element signature="e#4727#4751#0" expanded="true" />
+            <element signature="e#4781#4798#0" expanded="true" />
+            <element signature="e#5031#5046#0" expanded="true" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -2423,7 +2492,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1478821697982" expanded="true" signature="3426:3434" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2499,7 +2570,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1478821697982" expanded="true" signature="3426:3434" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2578,7 +2651,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
-          <folding />
+          <folding>
+            <marker date="1478821697982" expanded="true" signature="3426:3434" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2646,7 +2721,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="e#254#287#0" expanded="true" />
+            <element signature="e#312#347#0" expanded="true" />
+            <element signature="e#373#408#0" expanded="true" />
+            <element signature="e#432#465#0" expanded="true" />
+            <element signature="e#905#927#0" expanded="true" />
+            <element signature="e#1458#1470#0" expanded="true" />
+            <element signature="e#2359#2383#0" expanded="true" />
+            <element signature="e#2913#2925#0" expanded="true" />
+            <element signature="e#3817#3841#0" expanded="true" />
+            <element signature="e#3871#3888#0" expanded="true" />
+            <element signature="e#4378#4399#0" expanded="true" />
+            <element signature="e#4429#4446#0" expanded="true" />
+            <element signature="e#4727#4751#0" expanded="true" />
+            <element signature="e#4781#4798#0" expanded="true" />
+            <element signature="e#5031#5046#0" expanded="true" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -2693,7 +2784,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-          <folding />
+          <folding>
+            <element signature="e#254#287#0" expanded="true" />
+            <element signature="e#312#347#0" expanded="true" />
+            <element signature="e#373#408#0" expanded="true" />
+            <element signature="e#432#465#0" expanded="true" />
+            <element signature="e#905#927#0" expanded="true" />
+            <element signature="e#1458#1470#0" expanded="true" />
+            <element signature="e#2359#2383#0" expanded="true" />
+            <element signature="e#2913#2925#0" expanded="true" />
+            <element signature="e#3817#3841#0" expanded="true" />
+            <element signature="e#3871#3888#0" expanded="true" />
+            <element signature="e#4378#4399#0" expanded="true" />
+            <element signature="e#4429#4446#0" expanded="true" />
+            <element signature="e#4727#4751#0" expanded="true" />
+            <element signature="e#4781#4798#0" expanded="true" />
+            <element signature="e#5031#5046#0" expanded="true" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -2791,7 +2898,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1478821697982" expanded="true" signature="3426:3434" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2826,9 +2935,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_signin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-          <folding />
+        <state relative-caret-position="305">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="e#254#287#0" expanded="true" />
+            <element signature="e#312#347#0" expanded="true" />
+            <element signature="e#373#408#0" expanded="true" />
+            <element signature="e#432#465#0" expanded="true" />
+            <element signature="e#905#927#0" expanded="true" />
+            <element signature="e#1458#1470#0" expanded="true" />
+            <element signature="e#2359#2383#0" expanded="true" />
+            <element signature="e#2913#2925#0" expanded="true" />
+            <element signature="e#3817#3841#0" expanded="true" />
+            <element signature="e#3871#3888#0" expanded="true" />
+            <element signature="e#4378#4399#0" expanded="true" />
+            <element signature="e#4429#4446#0" expanded="true" />
+            <element signature="e#4727#4751#0" expanded="true" />
+            <element signature="e#4781#4798#0" expanded="true" />
+            <element signature="e#5031#5046#0" expanded="true" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
