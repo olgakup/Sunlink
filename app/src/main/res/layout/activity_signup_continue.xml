@@ -19,20 +19,27 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="2dp"
-            android:text="@string/signup_username"
+            android:text="@string/change_password"
             android:textSize="@dimen/textsize" />
 
-        <EditText
-            android:id="@+id/sign_up_email"
+        <TextView
+        android:id="@+id/sign_up_con_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/login_email"
+        android:textSize="@dimen/textsize" />
+
+        <TextView
+            android:id="@+id/sign_up_con_error"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:inputType="textEmailAddress"
-            android:hint="@string/login_email"
+            android:textColor="@color/colorAccent"
             android:textSize="@dimen/textsize" />
 
         <EditText
-            android:id="@+id/sign_up_password"
+            android:id="@+id/sign_up_con_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
@@ -40,13 +47,23 @@
             android:hint="@string/login_password"
             android:textSize="@dimen/textsize" />
 
+        <EditText
+            android:id="@+id/sign_up_con_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:inputType="textPassword"
+            android:hint="@string/login_confirm_password"
+            android:textSize="@dimen/textsize" />
+
         <Button
-            android:id="@+id/sign_up_submit"
+            android:id="@+id/sign_up_con_submit"
             style="@style/ButtonStyleFillIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/signUp"
             android:textAllCaps="false" />
+
     </LinearLayout>
 
 </ScrollView>

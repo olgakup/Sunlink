@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.csun_sunlink.csuncareercenter">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,14 +22,22 @@
             android:label="Sign In">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".StartActivity" />
         </activity>
         <activity
             android:name=".SignUp"
             android:label="Sign Up">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".StartActivity" />
+        </activity>
+        <activity
+            android:name=".SignUpContinue"
+            android:label="Sign Up">
+        </activity>
+        <activity
+            android:name=".StartActivity"
+            android:label="Main Page">
         </activity>
     </application>
 
