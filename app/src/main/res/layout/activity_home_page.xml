@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_weight="15"
         android:background="@color/colorPrimary"
         android:weightSum="100">
         <TextView
@@ -43,7 +42,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_weight="5"
         android:background="@color/colorPrimaryLight1">
         <ImageButton
             android:layout_width="wrap_content"
@@ -89,39 +87,72 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="35"
         android:orientation="horizontal"
-        android:background="@color/colorPrimaryLight1">
+        android:background="@color/colorPrimary"
+        android:layout_weight="1">
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:text="Upcoming Events"
-            style="@style/HomePageMenyBar"/>
+            style="@style/HomePageMenyBar"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:layout_weight="30"/>
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <Spinner
+            android:id="@+id/eventsspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/HomePageMenyBar"
+            android:backgroundTint="@color/colorPrimaryLight1"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" />
-        </ScrollView>
+
     </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryLight1"
+        android:layout_weight="50"></TableLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="45"
-        android:background="@color/colorPrimaryLight1">
+        android:background="@color/colorPrimary">
+
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:text="Latests Job Posts"
-            style="@style/HomePageMenyBar"/>
-    </LinearLayout>
+            style="@style/HomePageMenyBar"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:layout_weight="30"/>
 
+        <Spinner
+            android:id="@+id/jobpostspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spinner_jobs"
+            style="@style/HomePageMenyBar"
+            android:backgroundTint="@color/colorPrimaryLight1"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            />
+
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        android:background="@color/colorPrimaryLight1"></TableLayout>
 
 
 </LinearLayout>

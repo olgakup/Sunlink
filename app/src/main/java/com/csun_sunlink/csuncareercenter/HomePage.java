@@ -5,7 +5,6 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -20,9 +19,16 @@ public class HomePage extends AppCompatActivity{
 
 
     //private final CURRENTUSER = getCurrentUser();
+    /*this is data to test home page class*/
     private String userName = "Matt Ross";
     private String userDegree = "Computer Science";
     private String screenHeader;
+    private String event1 = "Event1";
+    private String date1 ="11/1/16";
+    private String event2 = "Event2";
+    private String date2 ="11/2/16";
+    private String event3 = "Event3";
+    private String date3 ="11/3/16";
 
     //Buttons:
     ImageButton prflButton;
