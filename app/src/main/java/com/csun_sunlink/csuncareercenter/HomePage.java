@@ -4,6 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -30,11 +31,13 @@ public class HomePage extends AppCompatActivity{
         TextView header = (TextView) findViewById(R.id.headerHomePage);
         header.setText(screenHeader);
 
-        Bitmap bitmap = BitmapFactory.decodeResource(this.getResources(),R.drawable.profile);
+        Bitmap bitmap = BitmapFactory.decodeResource(this.getResources(),R.drawable.defaultpicture);
         Bitmap circularBitmap = ProfileImageDrawable.getRoundedCornerBitmap(bitmap, 100);
 
         ImageView circularImageView = (ImageView)findViewById(R.id.imageView);
         circularImageView.setImageBitmap(circularBitmap);
+
+        ImageButton imgButton =(ImageButton)findViewById(R.id.profile_button);
 
 
     }

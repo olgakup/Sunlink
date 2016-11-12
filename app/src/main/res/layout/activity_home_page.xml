@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/profile"
+            android:src="@drawable/defaultpicture"
             android:id="@+id/circleView"
             android:layout_gravity="bottom" />
     </LinearLayout>
@@ -44,55 +44,33 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_weight="5"
-        android:weightSum="100"
         android:background="@color/colorPrimaryLight1">
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/Profile_button"
-            android:layout_weight="20"
-            android:background="@drawable/border"
-            android:text="Profile"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:backgroundTint="@color/colorPrimaryLight1" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/Search_Button"
-            android:layout_weight="20"
-            android:background="@drawable/border"
-            android:text="Search"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-            android:backgroundTint="@color/colorPrimaryLight" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/My_Career_Center_Button"
-            android:layout_weight="20"
-            android:background="@drawable/border"
-            style="@style/Widget.AppCompat.Button"
-            android:text="My Career Center"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-            android:backgroundTint="@color/colorPrimaryLight1" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/Resources_Button"
-            android:layout_weight="20"
-            android:background="@drawable/border"
-            android:text="Resources"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-            android:backgroundTint="@color/colorPrimaryLight" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/Settings_Button"
-            android:layout_weight="20"
-            android:background="@drawable/border"
-            android:text="Settings"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-            android:backgroundTint="@color/colorPrimaryLight1" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_button"
+            android:src="@drawable/profile" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_button"
+            android:src="@drawable/search"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/careercenter_button"
+            android:src="@drawable/careercenter" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resources_button"
+            android:src="@drawable/resources" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_button"
+            android:src="@drawable/settings" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
