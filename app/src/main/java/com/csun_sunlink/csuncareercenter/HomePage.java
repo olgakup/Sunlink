@@ -4,7 +4,11 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.PopupMenu;
+import android.view.ContextMenu;
+import android.view.MenuInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,7 +20,7 @@ import android.widget.TextView;
 public class HomePage extends AppCompatActivity{
 
     //Variables:
-
+    boolean floatingMenu; //true - jobs, false - events
 
     //private final CURRENTUSER = getCurrentUser();
     /*this is data to test home page class*/
@@ -37,12 +41,16 @@ public class HomePage extends AppCompatActivity{
     ImageButton rsrcButton;
     ImageButton sttngButton;
 
+    //Buttons for floating menus:
+    Button eventcategories;
+    Button jobcategories;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
         // Get Curent User: currentUser = ParseUser.getCurrentUser(); + check if the user !null
-        createHeader();
+        //createHeader();
         TextView header = (TextView) findViewById(R.id.headerHomePage);
         header.setText(screenHeader);
 
@@ -102,10 +110,59 @@ public class HomePage extends AppCompatActivity{
             }
         });
 
+        //Upcoming Events:
+        eventcategories = (Button)findViewById(R.id.eventsc_button);
+        eventcategories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                floatingMenu = false;
+                showMenu(v);
+
+            }
+        });
+
+
+        //Job Posts:
+        jobcategories = (Button)findViewById(R.id.jobc_button);
+        jobcategories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                floatingMenu = true;
+                showMenu(v);
+            }
+        });
+
+
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        MenuInflater menuInflater = getMenuInflater();
+        if (!floatingMenu) {
+            menuInflater.inflate(R.menu.eventcategoriesmenuhomepage, menu);
+        }
+       // else {
+        //    menuInflater.inflate(R.menu.jobcategoriesmenuhomepage, menu);
+       // }
 
     }
 
     public void createHeader() {
         this.screenHeader = this.userName + "\n" + this.userDegree;
+    }
+
+    public void showMenu(View v) {
+        PopupMenu popup = new PopupMenu(this, v);
+        MenuInflater inflater = popup.getMenuInflater();
+        // This activity implements OnMenuItemClickListener
+        //popup.setOnMenuItemClickListener(this);
+        if (!floatingMenu) {
+            inflater.inflate(R.menu.eventcategoriesmenuhomepage, popup.getMenu());
+        }
+        else {
+            inflater.inflate(R.menu.jobcategoriesmenuhomepage, popup.getMenu());
+        }
+        popup.show();
     }
 }

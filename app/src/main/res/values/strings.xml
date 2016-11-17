@@ -18,4 +18,11 @@
     <string name="resources_hp">Resources</string>
     <string name="settings_hp">Settings</string>
     <string name="spinner_jobs">More</string>
+
+    <string name="title_A">All</string>
+    <string name="title_MR">Major Related</string>
+    <string name="title_FT">Full Time</string>
+    <string name="title_PT">Part Time</string>
+    <string name="title_I">Internships</string>
+    <string name="title_At">Attending</string>
 </resources>
