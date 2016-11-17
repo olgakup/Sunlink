@@ -1,9 +1,11 @@
 package com.csun_sunlink.csuncareercenter;
 
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.view.ContextThemeWrapper;
 import android.support.v7.widget.PopupMenu;
 import android.view.ContextMenu;
 import android.view.MenuInflater;
@@ -50,7 +52,7 @@ public class HomePage extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
         // Get Curent User: currentUser = ParseUser.getCurrentUser(); + check if the user !null
-        //createHeader();
+        createHeader();
         TextView header = (TextView) findViewById(R.id.headerHomePage);
         header.setText(screenHeader);
 
@@ -153,9 +155,9 @@ public class HomePage extends AppCompatActivity{
     }
 
     public void showMenu(View v) {
-        PopupMenu popup = new PopupMenu(this, v);
+        Context wrapper = new ContextThemeWrapper(this, R.style.PopupMenu);
+        PopupMenu popup = new PopupMenu(wrapper, v);
         MenuInflater inflater = popup.getMenuInflater();
-        // This activity implements OnMenuItemClickListener
         //popup.setOnMenuItemClickListener(this);
         if (!floatingMenu) {
             inflater.inflate(R.menu.eventcategoriesmenuhomepage, popup.getMenu());
