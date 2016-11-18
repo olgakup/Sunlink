@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="927abba8-a724-4b0c-a419-b847de5c6e5d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Sunlink.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,7 +53,7 @@
       <file leaf-file-name="ProfileImageDrawable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/csun_sunlink/csuncareercenter/ProfileImageDrawable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
+            <state relative-caret-position="135">
               <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
@@ -63,7 +63,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/csun_sunlink/csuncareercenter/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
+            <state relative-caret-position="480">
               <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
@@ -108,7 +108,7 @@
       <file leaf-file-name="SignIn.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/csun_sunlink/csuncareercenter/SignIn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-294">
+            <state relative-caret-position="90">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="26" />
               <folding />
             </state>
@@ -1948,6 +1948,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2004,10 +2008,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2367,7 +2367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479496129849</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Merge branch 'olgak' of https://github.com/olgakup/sunlink&#10;&#10;# Conflicts:&#10;#&#9;.idea/modules.xml&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1479496500684</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1479496500684</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2381,10 +2388,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47783253" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47619048" sideWeight="0.50646204" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33448875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47783253" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47619048" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2458,7 +2465,8 @@
     <MESSAGE value="fixed error" />
     <MESSAGE value="Merge branch 'olgak'&#10;&#10;# Conflicts:&#10;#&#9;.idea/libraries/animated_vector_drawable_24_2_1.xml&#10;#&#9;.idea/libraries/appcompat_v7_24_2_1.xml&#10;#&#9;.idea/libraries/espresso_core_2_2_2.xml&#10;#&#9;.idea/libraries/espresso_idling_resource_2_2_2.xml&#10;#&#9;.idea/libraries/exposed_instrumentation_api_publish_0_5.xml&#10;#&#9;.idea/libraries/rules_0_5.xml&#10;#&#9;.idea/libraries/runner_0_5.xml&#10;#&#9;.idea/libraries/support_annotations_24_2_1.xml&#10;#&#9;.idea/libraries/support_compat_24_2_1.xml&#10;#&#9;.idea/libraries/support_core_ui_24_2_1.xml&#10;#&#9;.idea/libraries/support_core_utils_24_2_1.xml&#10;#&#9;.idea/libraries/support_fragment_24_2_1.xml&#10;#&#9;.idea/libraries/support_media_compat_24_2_1.xml&#10;#&#9;.idea/libraries/support_vector_drawable_24_2_1.xml&#10;#&#9;.idea/modules.xml&#10;" />
     <MESSAGE value="Merge branch 'master' of https://github.com/olgakup/sunlink into olgak&#10;&#10;# Conflicts:&#10;#&#9;.idea/libraries/appcompat_v7_24_2_1.xml&#10;#&#9;.idea/libraries/espresso_core_2_2_2.xml&#10;#&#9;.idea/libraries/espresso_idling_resource_2_2_2.xml&#10;#&#9;.idea/libraries/exposed_instrumentation_api_publish_0_5.xml&#10;#&#9;.idea/libraries/rules_0_5.xml&#10;#&#9;.idea/libraries/runner_0_5.xml&#10;#&#9;.idea/libraries/support_annotations_24_2_1.xml&#10;#&#9;.idea/libraries/support_compat_24_2_1.xml&#10;#&#9;.idea/libraries/support_core_ui_24_2_1.xml&#10;#&#9;.idea/libraries/support_core_utils_24_2_1.xml&#10;#&#9;.idea/libraries/support_fragment_24_2_1.xml&#10;#&#9;.idea/libraries/support_media_compat_24_2_1.xml&#10;#&#9;.idea/libraries/support_vector_drawable_24_2_1.xml&#10;#&#9;.idea/workspace.xml&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/olgakup/sunlink into olgak&#10;&#10;# Conflicts:&#10;#&#9;.idea/libraries/appcompat_v7_24_2_1.xml&#10;#&#9;.idea/libraries/espresso_core_2_2_2.xml&#10;#&#9;.idea/libraries/espresso_idling_resource_2_2_2.xml&#10;#&#9;.idea/libraries/exposed_instrumentation_api_publish_0_5.xml&#10;#&#9;.idea/libraries/rules_0_5.xml&#10;#&#9;.idea/libraries/runner_0_5.xml&#10;#&#9;.idea/libraries/support_annotations_24_2_1.xml&#10;#&#9;.idea/libraries/support_compat_24_2_1.xml&#10;#&#9;.idea/libraries/support_core_ui_24_2_1.xml&#10;#&#9;.idea/libraries/support_core_utils_24_2_1.xml&#10;#&#9;.idea/libraries/support_fragment_24_2_1.xml&#10;#&#9;.idea/libraries/support_media_compat_24_2_1.xml&#10;#&#9;.idea/libraries/support_vector_drawable_24_2_1.xml&#10;#&#9;.idea/workspace.xml&#10;" />
+    <MESSAGE value="Merge branch 'olgak' of https://github.com/olgakup/sunlink&#10;&#10;# Conflicts:&#10;#&#9;.idea/modules.xml&#10;#&#9;.idea/workspace.xml&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'olgak' of https://github.com/olgakup/sunlink&#10;&#10;# Conflicts:&#10;#&#9;.idea/modules.xml&#10;#&#9;.idea/workspace.xml&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2755,7 +2763,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/csun_sunlink/csuncareercenter/ProfileImageDrawable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
+        <state relative-caret-position="135">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
@@ -2763,7 +2771,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/csun_sunlink/csuncareercenter/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="480">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
@@ -2771,7 +2779,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/csun_sunlink/csuncareercenter/SignIn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-294">
+        <state relative-caret-position="90">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="26" />
           <folding />
         </state>
