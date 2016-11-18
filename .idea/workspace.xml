@@ -5,14 +5,9 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="error" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Firebase" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="927abba8-a724-4b0c-a419-b847de5c6e5d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="Sunlink.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -2021,12 +2016,6 @@
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\university\fall2016\Comp485\Sunlink\app\src\main\res\layout" />
-      <recent name="F:\university\fall2016\Comp485\Sunlink\app\src\main\res\drawable" />
-    </key>
-  </component>
   <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
@@ -2321,9 +2310,6 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="927abba8-a724-4b0c-a419-b847de5c6e5d" name="Default" comment="" />
@@ -2374,7 +2360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479496022252</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Merge branch 'master' of https://github.com/olgakup/sunlink into olgak&#10;&#10;# Conflicts:&#10;#&#9;.idea/libraries/appcompat_v7_24_2_1.xml&#10;#&#9;.idea/libraries/espresso_core_2_2_2.xml&#10;#&#9;.idea/libraries/espresso_idling_resource_2_2_2.xml&#10;#&#9;.idea/libraries/exposed_instrumentation_api_publish_0_5.xml&#10;#&#9;.idea/libraries/rules_0_5.xml&#10;#&#9;.idea/libraries/runner_0_5.xml&#10;#&#9;.idea/libraries/support_annotations_24_2_1.xml&#10;#&#9;.idea/libraries/support_compat_24_2_1.xml&#10;#&#9;.idea/libraries/support_core_ui_24_2_1.xml&#10;#&#9;.idea/libraries/support_core_utils_24_2_1.xml&#10;#&#9;.idea/libraries/support_fragment_24_2_1.xml&#10;#&#9;.idea/libraries/support_media_compat_24_2_1.xml&#10;#&#9;.idea/libraries/support_vector_drawable_24_2_1.xml&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1479496129849</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1479496129849</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
