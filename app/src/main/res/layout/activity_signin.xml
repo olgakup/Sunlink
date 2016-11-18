@@ -13,6 +13,86 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_username"
+            android:textSize="@dimen/textsize"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="2dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/signin_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/signin_email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_email"
+            android:textSize="@dimen/textsize"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/signin_password"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_password"
+            android:textSize="@dimen/textsize"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/signin_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logIn"
+            android:textAllCaps="false"
+            style="@style/ButtonStyleFillIn"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/or" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/or"
+            android:background="#FF0000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/or"
+            android:background="#FF0000" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center_horizontal|center_vertical">
 
@@ -23,6 +103,8 @@
             android:text="@string/login_linkin"
             android:textAllCaps="false" />
     </LinearLayout>
+
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -66,85 +148,6 @@
             android:layout_height="wrap_content"
             android:text="@string/login_facebook"
             android:textAllCaps="false" />
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/or"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:text="@string/or" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_centerVertical="true"
-            android:layout_toStartOf="@id/or"
-            android:background="#FF0000" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@id/or"
-            android:background="#FF0000" />
-
-    </RelativeLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:gravity="center_horizontal|center_vertical"
-        android:orientation="vertical"
-        >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/login_username"
-            android:textSize="@dimen/textsize"
-            android:layout_marginBottom="10dp"
-            android:layout_marginStart="2dp"/>
-
-        <TextView
-            android:id="@+id/signin_error"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <EditText
-            android:id="@+id/signin_email"
-            android:inputType="textEmailAddress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/login_email"
-            android:textSize="@dimen/textsize"
-            android:layout_marginBottom="5dp"/>
-
-        <EditText
-            android:id="@+id/signin_password"
-            android:layout_width="match_parent"
-            android:inputType="textPassword"
-            android:layout_height="wrap_content"
-            android:hint="@string/login_password"
-            android:textSize="@dimen/textsize"
-            android:layout_marginBottom="15dp"/>
-
-        <Button
-            android:id="@+id/signin_signin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/logIn"
-            android:textAllCaps="false"
-            style="@style/ButtonStyleFillIn"/>
-
     </LinearLayout>
 
 </LinearLayout>

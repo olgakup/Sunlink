@@ -39,6 +39,20 @@
             android:name=".StartActivity"
             android:label="Main Page">
         </activity>
+        <activity
+            android:name=".Search.SearchStart"
+            android:label="Search">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".StartActivity" />
+        </activity>
+        <activity
+            android:name=".Search.SearchDetail"
+            android:label="Search Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search.SearchStart" />
+        </activity>
     </application>
 
 </manifest>

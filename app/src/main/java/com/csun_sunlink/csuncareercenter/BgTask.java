@@ -121,13 +121,12 @@ public class BgTask extends AsyncTask<String, Void, String> {
                         response += line;
                     }
                     Is.close();
+                    Log.i("response",response);
                     return response;
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    Log.i("response",e.toString());
                 }
                 break;
-
-
         }
         return null;
     }
@@ -157,12 +156,10 @@ public class BgTask extends AsyncTask<String, Void, String> {
                 errorText.setText(R.string.invalid_userPass);
                 break;
             case "validUser":
-                intent = new Intent(ctx, MainActivity.class);
+                intent = new Intent(ctx, StartActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 ctx.startActivity(intent);
                 break;
-
-
         }
     }
 
