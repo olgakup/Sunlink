@@ -22,29 +22,29 @@
             android:label="Sign In">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".StartActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".SignUp"
             android:label="Sign Up">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".StartActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".SignUpContinue"
             android:label="Sign Up">
         </activity>
         <activity
-            android:name=".StartActivity"
-            android:label="Main Page">
+            android:name=".HomePage"
+            android:label="Home Page">
         </activity>
         <activity
             android:name=".Search.SearchStart"
             android:label="Search">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".StartActivity" />
+                android:value=".HomePage" />
         </activity>
         <activity
             android:name=".Search.SearchDetail"

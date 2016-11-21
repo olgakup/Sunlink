@@ -146,7 +146,7 @@ public class BgTask extends AsyncTask<String, Void, String> {
                 ctx.startActivity(intent);
                 break;
             case "registeredSuccessfully":
-                intent = new Intent(ctx, StartActivity.class);
+                intent = new Intent(ctx, HomePage.class);
                 intent.putExtra("EmailAddress", userEmail);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 ctx.startActivity(intent);
@@ -156,7 +156,7 @@ public class BgTask extends AsyncTask<String, Void, String> {
                 errorText.setText(R.string.invalid_userPass);
                 break;
             case "validUser":
-                intent = new Intent(ctx, StartActivity.class);
+                intent = new Intent(ctx, HomePage.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 ctx.startActivity(intent);
                 break;
