@@ -2,7 +2,6 @@ package com.csun_sunlink.csuncareercenter.Search;
 
 import android.content.Context;
 import android.os.AsyncTask;
-import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
@@ -96,11 +95,12 @@ class SearchBgTask extends AsyncTask<String, Void, String> {
                 Calendar cal = Calendar.getInstance();
                 try {
                     d = dfDate.parse(postedDate);
-                    d1 = dfDate.parse(dfDate.format(cal.getTime()));//Returns 15/10/2012
+                    d1 = dfDate.parse(dfDate.format(cal.getTime()));
                 } catch (java.text.ParseException e) {
                     e.printStackTrace();
                 }
 
+                assert d1 != null;
                 int diffInDays = (int) ((d1.getTime() - d.getTime())/ (1000 * 60 * 60 * 24));
                 if (diffInDays == 0)
                     differenceDate = "Today";
