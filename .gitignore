@@ -29,6 +29,10 @@ out/
 
 build/
 
+# Gradle:
+.idea/gradle.xml
+.idea/libraries
+
 
 # Local configuration file (sdk path, etc)
 
@@ -58,3 +62,8 @@ captures/
 # Intellij
 
 *.iml
+
+
+.idea/
+.idea/workspace.xml
+.idea/tasks.xml

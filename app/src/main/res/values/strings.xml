@@ -38,6 +38,7 @@
     <string name="title_PT">Part Time</string>
     <string name="title_I">Internships</string>
     <string name="title_At">Attending</string>
+    <string name="search_by_jobtitle">Search by job title</string>
 
     <!-- Menu Drawer -->
     <string name="openDrawer">Open drawer</string>
