@@ -1,10 +1,10 @@
 package com.csun_sunlink.csuncareercenter.Search;
 
-class ItemInfo {
+public class ItemInfo {
 
     private String jobTitle,jobDuties,jobSummary,essentialSkills,postedDate,companyName,companyAddress,jobId;
 
-    ItemInfo(String mJobId,String mJobTitle,String mCompanyName, String mPostedDate,String mCompanyAddress) {
+    public ItemInfo(String mJobId, String mJobTitle, String mCompanyName, String mPostedDate, String mCompanyAddress) {
         this.jobId = mJobId;
         this.jobTitle = mJobTitle;
         this.companyName = mCompanyName;

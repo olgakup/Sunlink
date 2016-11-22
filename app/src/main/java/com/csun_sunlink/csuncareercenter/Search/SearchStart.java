@@ -52,6 +52,8 @@ public class SearchStart extends AppCompatActivity {
                 bundle.putString("jobId",jobId);
                 String address= ((TextView) view.findViewById(R.id.search_company_area)).getText().toString();
                 bundle.putString("address",address);
+                String postedDate= ((TextView) view.findViewById(R.id.search_posted_date)).getText().toString();
+                bundle.putString("postedDate",postedDate);
                 Intent intent = new Intent(getApplication(), SearchDetail.class);
                 intent.putExtras(bundle);
                 startActivity(intent);

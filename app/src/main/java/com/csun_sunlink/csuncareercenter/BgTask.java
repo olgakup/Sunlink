@@ -3,6 +3,7 @@ package com.csun_sunlink.csuncareercenter;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.preference.PreferenceManager;
 import android.text.format.DateFormat;
 import android.util.Log;
 import android.view.View;
@@ -18,6 +19,7 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import android.content.SharedPreferences;
 
 
 public class BgTask extends AsyncTask<String, Void, String> {
@@ -134,6 +136,8 @@ public class BgTask extends AsyncTask<String, Void, String> {
     @Override
     protected void onPostExecute(String result) {
         Intent intent;
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(ctx.getApplicationContext());
+        SharedPreferences.Editor editor = pref.edit();
         switch (result) {
             case "redundantUser":
                 EditText signUpEmailError = (EditText) rootView.findViewById(R.id.sign_up_email);
@@ -158,6 +162,8 @@ public class BgTask extends AsyncTask<String, Void, String> {
             case "validUser":
                 intent = new Intent(ctx, HomePage.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                editor.putString("user_email", userName);
+                editor.apply();
                 ctx.startActivity(intent);
                 break;
         }

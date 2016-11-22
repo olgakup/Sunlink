@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.view.ContextThemeWrapper;
 import android.support.v7.widget.PopupMenu;
@@ -16,6 +18,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.csun_sunlink.csuncareercenter.Fragments.HomePageJobListingFragment;
 import com.csun_sunlink.csuncareercenter.Search.SearchStart;
 
 /**
@@ -137,6 +140,11 @@ public class HomePage extends AppCompatActivity{
             }
         });
 
+        HomePageJobListingFragment jobListing=new HomePageJobListingFragment();
+        FragmentManager manager=getSupportFragmentManager();//create an instance of fragment manager
+        FragmentTransaction transaction=manager.beginTransaction();//create an instance of Fragment-transaction
+        transaction.add(R.id.home_page_job_listing, jobListing, "Job Listing");
+        transaction.commit();
 
     }
 
