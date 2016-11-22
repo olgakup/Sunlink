@@ -38,6 +38,7 @@
             android:src="@drawable/defaultpicture"
             android:id="@+id/circleView"
             android:layout_gravity="bottom" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -149,7 +150,7 @@
             />
 
 
-         />
+        />
 
     </LinearLayout>
     <TableLayout

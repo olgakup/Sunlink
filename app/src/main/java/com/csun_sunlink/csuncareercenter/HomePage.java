@@ -1,6 +1,7 @@
 package com.csun_sunlink.csuncareercenter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -14,6 +15,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.csun_sunlink.csuncareercenter.Search.SearchStart;
 
 /**
  * Created by olgak on 11/7/16.
@@ -71,8 +74,8 @@ public class HomePage extends AppCompatActivity{
         prflButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // Intent intent = new Intent(HomePage.this, ProfileActivity.class);
-               // startActivity(intent);
+                // Intent intent = new Intent(HomePage.this, ProfileActivity.class);
+                // startActivity(intent);
             }
         });
         //Search:
@@ -80,8 +83,8 @@ public class HomePage extends AppCompatActivity{
         srchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Intent intent = new Intent(HomePage.this, SearchActivity.class);
-                // startActivity(intent);
+                Intent intent = new Intent(v.getContext(),SearchStart.class);
+                startActivity(intent);
             }
         });
         //Career Center:
@@ -144,9 +147,9 @@ public class HomePage extends AppCompatActivity{
         if (!floatingMenu) {
             menuInflater.inflate(R.menu.eventcategoriesmenuhomepage, menu);
         }
-       // else {
+        // else {
         //    menuInflater.inflate(R.menu.jobcategoriesmenuhomepage, menu);
-       // }
+        // }
 
     }
 

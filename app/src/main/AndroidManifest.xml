@@ -2,13 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.csun_sunlink.csuncareercenter">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomePage"
+        <activity android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +30,28 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".SignUpContinue"
+            android:label="Sign Up">
+        </activity>
+        <activity
+            android:name=".HomePage"
+            android:label="Home Page">
+        </activity>
+        <activity
+            android:name=".Search.SearchStart"
+            android:label="Search">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomePage" />
+        </activity>
+        <activity
+            android:name=".Search.SearchDetail"
+            android:label="Search Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search.SearchStart" />
         </activity>
     </application>
 
