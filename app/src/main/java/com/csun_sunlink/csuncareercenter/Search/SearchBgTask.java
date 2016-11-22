@@ -2,7 +2,6 @@ package com.csun_sunlink.csuncareercenter.Search;
 
 import android.content.Context;
 import android.os.AsyncTask;
-import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
@@ -21,6 +20,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import com.csun_sunlink.csuncareercenter.R;
@@ -74,6 +74,7 @@ class SearchBgTask extends AsyncTask<String, Void, String> {
     protected void onPostExecute(String finalResult) {
         String companyStreet, companyStreet1, companyCityName, companyZipcode, companyState, companyCountry, jobId;
         String jobTitle, postedDate, companyName;
+        String differenceDate;
         ListView listView;
         try {
             JSONObject jsonObj = new JSONObject(finalResult);
@@ -86,23 +87,25 @@ class SearchBgTask extends AsyncTask<String, Void, String> {
             while (count < jsonArray.length()) {
                 JSONObject jsonObject = jsonArray.getJSONObject(count);
                 jobTitle = jsonObject.getString("job_title");
+
                 postedDate = jsonObject.getString("posted_date").trim();
-                Calendar thatDay = Calendar.getInstance();
-                Log.i("timeshow", "searchbgtask");
-                Log.i("timeshow", postedDate.substring(3, 4));
-                Log.i("timeshow", postedDate.substring(0, 1));
-                Log.i("timeshow", postedDate.substring(6, 9));
-                thatDay.set(Calendar.DAY_OF_MONTH, Integer.parseInt(postedDate.substring(3, 4)));
-                thatDay.set(Calendar.MONTH, Integer.parseInt(postedDate.substring(0, 1))); // 0-11 so 1 less
-                thatDay.set(Calendar.YEAR, Integer.parseInt(postedDate.substring(6, 9)));
+                SimpleDateFormat dfDate  = new SimpleDateFormat("MM/dd/yyyy");
+                java.util.Date d = null;
+                java.util.Date d1 = null;
+                Calendar cal = Calendar.getInstance();
+                try {
+                    d = dfDate.parse(postedDate);
+                    d1 = dfDate.parse(dfDate.format(cal.getTime()));
+                } catch (java.text.ParseException e) {
+                    e.printStackTrace();
+                }
 
-                Calendar today = Calendar.getInstance();
-
-                long diff = today.getTimeInMillis() - thatDay.getTimeInMillis();
-                Log.i("timeshow", Long.toString(today.getTimeInMillis()));
-                Log.i("timeshow", Long.toString(thatDay.getTimeInMillis()));
-
-                long days = diff / (24 * 60 * 60 * 1000);
+                assert d1 != null;
+                int diffInDays = (int) ((d1.getTime() - d.getTime())/ (1000 * 60 * 60 * 24));
+                if (diffInDays == 0)
+                    differenceDate = "Today";
+                else
+                    differenceDate = Integer.toString(diffInDays)+" d";
 
                 companyName = jsonObject.getString("company_name");
                 companyStreet = jsonObject.getString("company_street");
@@ -124,7 +127,7 @@ class SearchBgTask extends AsyncTask<String, Void, String> {
                 }
                 address.append("\n").append(companyCountry).append(",");
                 address.append(companyZipcode).append(".");
-                ItemInfo itemInfo = new ItemInfo(jobId, jobTitle, companyName, Long.toString(days), address.toString());
+                ItemInfo itemInfo = new ItemInfo(jobId, jobTitle, companyName, differenceDate, address.toString());
                 itemAdapter.add(itemInfo);
                 count++;
             }
