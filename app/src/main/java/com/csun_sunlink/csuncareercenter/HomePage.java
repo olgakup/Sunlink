@@ -48,14 +48,14 @@ public class HomePage extends AppCompatActivity{
     ImageButton rsrcButton;
     ImageButton sttngButton;
 
-    //Buttons for floating menus:
+    //Buttons for floating menus:-
     Button eventcategories;
     Button jobcategories;
 
     //Drawer
 
     String TITLES[] = {"Home","Profile","Search","My Career Center","Resources","Settings"};
-    int ICONS[] = {R.drawable.profile,R.drawable.profile,R.drawable.search,R.drawable.careercenter,R.drawable.resources, R.drawable.settings};
+    int ICONS[] = {R.drawable.ic_home_white_48dp,R.drawable.ic_person_white_48dp,R.drawable.ic_search_white_48dp,R.drawable.ic_business_center_white_48dp,R.drawable.ic_library_books_white_48dp, R.drawable.ic_settings_white_48dp};
 
     //Similarly we Create a String Resource for the name and email in the header view
     //And we also create a int resource for profile picture in the header view
@@ -69,9 +69,6 @@ public class HomePage extends AppCompatActivity{
     RecyclerView.LayoutManager mLayoutManager;
     DrawerLayout Drawer;
     ActionBarDrawerToggle mDrawerToggle;
-
-
-
 
 
     @Override

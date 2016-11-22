@@ -21,14 +21,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@color/colorPrimaryLight1"
+        android:background="@color/colorPrimary"
         android:paddingTop="5dp"
         android:paddingBottom="5dp">
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/profile_button"
-            android:src="@drawable/profile"
+            android:src="@drawable/ic_person_white_48dp"
             android:background="@null"
             android:layout_weight="20"
             android:layout_gravity="center"/>
@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/search_button"
-            android:src="@drawable/search"
+            android:src="@drawable/ic_search_white_48dp"
             android:background="@null"
             android:layout_weight="20"
             android:layout_gravity="center"/>
@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/careercenter_button"
-            android:src="@drawable/careercenter"
+            android:src="@drawable/ic_business_center_white_48dp"
             android:background="@null"
             android:layout_weight="20"
             android:layout_gravity="center"/>
@@ -52,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/resources_button"
-            android:src="@drawable/resources"
+            android:src="@drawable/ic_library_books_white_48dp"
             android:background="@null"
             android:layout_weight="20"
             android:layout_gravity="center"/>
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/settings_button"
-            android:src="@drawable/settings"
+            android:src="@drawable/ic_settings_white_48dp"
             android:background="@null"
             android:layout_weight="20"
             android:layout_gravity="center"/>
@@ -145,7 +145,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="left"
 
-        android:background="#ffffff"
+        android:background="@color/colorPrimaryDark"
         android:scrollbars="vertical">
 
     </android.support.v7.widget.RecyclerView>
