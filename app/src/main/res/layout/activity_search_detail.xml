@@ -22,7 +22,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="job title"
                 android:textColor="@color/black"/>
 
             <TextView
@@ -31,7 +30,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/search_detail_job_title"
                 android:gravity="center"
-                android:text="company name"
                 android:textColor="@color/black"/>
 
             <TextView
@@ -40,7 +38,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/search_detail_company_name"
                 android:gravity="center"
-                android:text="position type"
                 android:textColor="@color/black"/>
 
             <TextView
@@ -49,7 +46,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/search_detail_position_type"
                 android:gravity="center"
-                android:text="company address"
                 android:textColor="@color/black"/>
 
             <TextView
@@ -58,7 +54,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/search_detail_company_add"
                 android:gravity="center"
-                android:text="posted date"
                 android:textColor="@color/black"/>
 
             <LinearLayout
@@ -101,7 +96,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/search_detail_job_description"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:paddingBottom="12dp"
+                android:paddingStart="17dp"/>
 
             <TextView
                 android:id="@+id/search_detail_job_duty"
@@ -116,7 +113,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/search_detail_job_duty"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:paddingBottom="12dp"
+                android:paddingStart="17dp"/>
 
             <TextView
                 android:id="@+id/search_detail_essential_skills"
@@ -131,7 +130,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/search_detail_essential_skills"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:paddingBottom="12dp"
+                android:paddingStart="17dp"/>
 
             <TextView
                 android:id="@+id/search_detail_desired_skills"
@@ -146,7 +147,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/search_detail_desired_skills"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:paddingStart="17dp"/>
         </RelativeLayout>
 
     </LinearLayout>

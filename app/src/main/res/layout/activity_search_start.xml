@@ -12,6 +12,7 @@
         <SearchView
             android:id="@+id/search_start_searchView"
             style="@style/EditTextSearch"
+            android:queryHint="@string/search_by_jobtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -19,6 +20,5 @@
             android:id="@+id/search_result_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
     </LinearLayout>
 </ScrollView>

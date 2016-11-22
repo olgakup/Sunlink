@@ -11,14 +11,14 @@ import java.util.List;
 
 import com.csun_sunlink.csuncareercenter.R;
 
-class ItemAdapter extends ArrayAdapter {
+public class ItemAdapter extends ArrayAdapter {
     List list = new ArrayList();
-    ItemAdapter(Context context, int resource) {
+    public ItemAdapter(Context context, int resource) {
         super(context, resource);
     }
 
 
-    void add(ItemInfo object) {
+    public void add(ItemInfo object) {
         super.add(object);
         list.add(object);
     }

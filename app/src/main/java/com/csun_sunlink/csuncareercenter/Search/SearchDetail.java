@@ -12,7 +12,7 @@ import com.csun_sunlink.csuncareercenter.R;
 public class SearchDetail extends AppCompatActivity {
     private TextView jobTitle, companyName, positionType, companyAdd, postedDate, jobDes, jobDuties, essentialSkills, desiredSkills;
     private Button saveJob, applyJob;
-    String jobId, address,method;
+    String jobId, address,method, differenceDate;
     private View rootView;
     private Context ctx;
 
@@ -34,15 +34,31 @@ public class SearchDetail extends AppCompatActivity {
         saveJob = (Button) findViewById(R.id.search_detail_save_button);
         applyJob = (Button) findViewById(R.id.search_detail_apply_button);
 
+        saveJob.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        applyJob.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
         jobId = getIntent().getExtras().getString("jobId");
         address = getIntent().getExtras().getString("address");
+        differenceDate = getIntent().getExtras().getString("postedDate");
+
 
         rootView = findViewById(android.R.id.content);
         ctx = this.getApplicationContext();
 
         if (!jobId.equals("")) {
             SearchDetailBgTask bgTask = new SearchDetailBgTask(ctx, rootView);
-            bgTask.execute(jobId,address);
+            bgTask.execute(jobId,address,differenceDate);
         }
     }
 }

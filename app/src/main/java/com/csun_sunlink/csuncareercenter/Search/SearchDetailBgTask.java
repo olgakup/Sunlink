@@ -23,7 +23,7 @@ import java.net.URLEncoder;
 class SearchDetailBgTask extends AsyncTask<String, Void, String> {
     private Context ctx;
     private View rootView;
-    private String address;
+    private String address,differenceDate;
 
     SearchDetailBgTask(Context ctx, View rootView) {
         this.ctx = ctx;
@@ -36,8 +36,7 @@ class SearchDetailBgTask extends AsyncTask<String, Void, String> {
         String result, jobIdKey ;
         jobIdKey = params[0];
         address = params[1];
-        Log.i("logkey", jobIdKey);
-        Log.i("logkey", address);
+        differenceDate = params[2];
         try {
             URL url = new URL(searchDetailUrl);
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
@@ -92,7 +91,10 @@ class SearchDetailBgTask extends AsyncTask<String, Void, String> {
             companyNameTextView.setText(jsonObject.getString("company_name"));
             positionTypeTextView.setText("part time");
             companyAddTextView.setText(address);
-            postedDateTextView.setText(jsonObject.getString("posted_date"));
+            if(!differenceDate.equals("Today"))
+                postedDateTextView.setText(differenceDate+"ays ago");
+            else
+                postedDateTextView.setText(differenceDate);
             jobDesTextView.setText(jsonObject.getString("job_summary"));
             jobDutiesTextView.setText(jsonObject.getString("job_duties"));
             essentialSkillsTextView.setText(jsonObject.getString("essential_skills"));
