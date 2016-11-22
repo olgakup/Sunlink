@@ -12,9 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="927abba8-a724-4b0c-a419-b847de5c6e5d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/csun_sunlink/csuncareercenter/SignUpContinue.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/csun_sunlink/csuncareercenter/SignUpContinue.java" />
     </list>
     <ignored path="Sunlink.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -2619,7 +2617,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479773894852</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Merge branch 'master' of https://github.com/olgakup/sunlink into olgak&#10;&#10;# Conflicts:&#10;#&#9;.idea/libraries/circleimageview_1_2_1_unspecified.xml&#10;#&#9;.idea/modules.xml&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1479773904641</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1479773904641</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
