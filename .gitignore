@@ -58,3 +58,6 @@ captures/
 # Intellij
 
 *.iml
+
+
+.idea
