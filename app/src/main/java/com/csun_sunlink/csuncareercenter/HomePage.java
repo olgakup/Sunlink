@@ -170,7 +170,7 @@ public class HomePage extends AppCompatActivity{
         HomePageJobListingFragment jobListing=new HomePageJobListingFragment();
         FragmentManager manager=getSupportFragmentManager();//create an instance of fragment manager
         FragmentTransaction transaction=manager.beginTransaction();//create an instance of Fragment-transaction
-        transaction.add(R.id.home_page_job_listing, jobListing, "Job Listing");
+        //transaction.add(R.id.home_page_job_listing, jobListing, "Job Listing");
         transaction.commit();
 
 
