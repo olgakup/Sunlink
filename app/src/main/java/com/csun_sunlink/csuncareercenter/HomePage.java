@@ -2,6 +2,8 @@ package com.csun_sunlink.csuncareercenter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -20,6 +22,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.csun_sunlink.csuncareercenter.Fragments.HomePageJobListingFragment;
 import com.csun_sunlink.csuncareercenter.Search.SearchStart;
@@ -83,7 +87,7 @@ public class HomePage extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
         // Get Curent User: currentUser = ParseUser.getCurrentUser(); + check if the user !null
-       /* createHeader();
+        createHeader();
         TextView header = (TextView) findViewById(R.id.headerHomePage);
         header.setText(screenHeader);
 
@@ -94,7 +98,7 @@ public class HomePage extends AppCompatActivity{
         Bitmap circularBitmap = ProfileImageDrawable.getRoundedCornerBitmap(bitmap, 100);
 
         ImageView circularImageView = (ImageView)findViewById(R.id.imageView);
-        circularImageView.setImageBitmap(circularBitmap); */
+        circularImageView.setImageBitmap(circularBitmap);
 
         //Main Menu Buttons:
         //Profile:
@@ -162,7 +166,6 @@ public class HomePage extends AppCompatActivity{
             public void onClick(View v) {
                 floatingMenu = true;
                 showMenu(v);
-
             }
         });
 

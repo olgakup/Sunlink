@@ -21,6 +21,7 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import android.content.SharedPreferences;
 
 
 public class BgTask extends AsyncTask<String, Void, String> {
