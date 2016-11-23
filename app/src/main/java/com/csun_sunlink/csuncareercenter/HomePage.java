@@ -2,8 +2,6 @@ package com.csun_sunlink.csuncareercenter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -22,8 +20,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.csun_sunlink.csuncareercenter.Fragments.HomePageJobListingFragment;
 import com.csun_sunlink.csuncareercenter.Search.SearchStart;
@@ -87,18 +83,16 @@ public class HomePage extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
         // Get Curent User: currentUser = ParseUser.getCurrentUser(); + check if the user !null
-        createHeader();
-        TextView header = (TextView) findViewById(R.id.headerHomePage);
-        header.setText(screenHeader);
+
 
         //Profile picture:
         //check if no profile picture on file use defualt:
 
-        Bitmap bitmap = BitmapFactory.decodeResource(this.getResources(),R.drawable.defaultpicture);
+        /*Bitmap bitmap = BitmapFactory.decodeResource(this.getResources(),R.drawable.defaultpicture);
         Bitmap circularBitmap = ProfileImageDrawable.getRoundedCornerBitmap(bitmap, 100);
 
         ImageView circularImageView = (ImageView)findViewById(R.id.imageView);
-        circularImageView.setImageBitmap(circularBitmap);
+        circularImageView.setImageBitmap(circularBitmap); */
 
         //Main Menu Buttons:
         //Profile:
@@ -173,7 +167,7 @@ public class HomePage extends AppCompatActivity{
         HomePageJobListingFragment jobListing=new HomePageJobListingFragment();
         FragmentManager manager=getSupportFragmentManager();//create an instance of fragment manager
         FragmentTransaction transaction=manager.beginTransaction();//create an instance of Fragment-transaction
-        transaction.add(R.id.home_page_job_listing, jobListing, "Job Listing");
+        //transaction.add(R.id.home_page_job_listing, jobListing, "Job Listing");
         transaction.commit();
 
 
